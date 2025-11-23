@@ -3,10 +3,11 @@ It contains total 8 REST APIs. Adding the details below -
 
 
 Get Users 
-URL : http://localhost:8080/user
+``URL : http://localhost:8080/user``
 
 Create User
-URL : http://localhost:8080/user <br>
+``URL : http://localhost:8080/user ``
+<br>
 Sample Requst Payload
 ```
 {
@@ -15,10 +16,11 @@ Sample Requst Payload
 }
 ```
 Get Habits of a User
-URL : http://localhost:8080/habits?user=<userId>
+``URL : http://localhost:8080/habits?user={userId}``
 
 Create Habit
-URL : http://localhost:8080/habits/user/<userId> <br>
+``URL : http://localhost:8080/habits/user/{userId}``
+<br>
 Sample Requst Payload
 ```
 {
@@ -36,7 +38,8 @@ Sample Requst Payload
 
 ```
 Mark Habit
-URL : http://localhost:8080/habits/mark?user=<userId>&habit=<habitId> <br>
+``URL : http://localhost:8080/habits/mark?user={userId}&habit={habitId}``
+<br>
 Sample Requst Payload 
 ```
 {
@@ -44,7 +47,7 @@ Sample Requst Payload
 }
 ```
 Update Habit (PUT) - Add new tags and remove the exisiting one
-URL : http://localhost:8080/habits/<habitId>?user=<userId>
+``URL : http://localhost:8080/habits/{habitId}?user={userId}``
 <br>
 Sample Requst Payload
 ```
@@ -62,7 +65,7 @@ Sample Requst Payload
 }
 ```
 Update Habit (PATCH) -  Add tags with existing ones
-URL : http://localhost:8080/habits/<habitId>?user=<userId>
+``URL : http://localhost:8080/habits/{habitId}?user={userId}``
 <br>
 Sample Requst Payload
 ```
@@ -80,5 +83,5 @@ Sample Requst Payload
 
 ```
 Delete Habit : 
-URL : http://localhost:8080/habits/<habitId>/users/<userId>
+``URL : http://localhost:8080/habits/{habitId}/users/{userId}``
 
