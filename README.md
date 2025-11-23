@@ -6,7 +6,7 @@ Get Users
 URL : http://localhost:8080/user
 
 Create User
-URL : http://localhost:8080/user
+URL : http://localhost:8080/user <br>
 Sample Requst Payload
 ```
 {
@@ -18,7 +18,8 @@ Get Habits of a User
 URL : http://localhost:8080/habits?user=<userId>
 
 Create Habit
-URL : http://localhost:8080/habits/user/<userId>
+URL : http://localhost:8080/habits/user/<userId> <br>
+Sample Requst Payload
 ```
 {
     "title":"tv",
@@ -35,7 +36,8 @@ URL : http://localhost:8080/habits/user/<userId>
 
 ```
 Mark Habit
-URL : http://localhost:8080/habits/mark?user=<userId>&habit=<habitId>
+URL : http://localhost:8080/habits/mark?user=<userId>&habit=<habitId> <br>
+Sample Requst Payload 
 ```
 {
     "note":"done"
@@ -43,6 +45,8 @@ URL : http://localhost:8080/habits/mark?user=<userId>&habit=<habitId>
 ```
 Update Habit (PUT) - Add new tags and remove the exisiting one
 URL : http://localhost:8080/habits/<habitId>?user=<userId>
+<br>
+Sample Requst Payload
 ```
 {
     "title":"tv/gaming time",
@@ -59,6 +63,8 @@ URL : http://localhost:8080/habits/<habitId>?user=<userId>
 ```
 Update Habit (PATCH) -  Add tags with existing ones
 URL : http://localhost:8080/habits/<habitId>?user=<userId>
+<br>
+Sample Requst Payload
 ```
 {
 
